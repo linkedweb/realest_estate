@@ -1,0 +1,72 @@
+.contact {
+    margin-bottom: 6rem;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        margin-left: 20%;
+        margin-right: 20%;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+            margin-top: 4rem;
+        }
+
+        &__label {
+            font-size: 1.6rem;
+            margin-bottom: 0.6rem;
+            color: $color-primary;
+        }
+
+        &__input {
+            margin-bottom: 2rem;
+            height: 3.2rem;
+            padding: 1.5rem 2rem;
+            font-size: 1.6rem;
+            outline-color: $color-primary;
+            caret-color: $color-primary;
+            color: $color-grey-dark;
+            border: none;
+            background-color: $color-grey-light;
+            border-radius: 0.4rem;
+            box-shadow: 0 0.3rem 0.2rem rgba(0,0,0,0.1);
+        }
+
+        &__textarea {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            outline-color: $color-primary;
+            caret-color: $color-primary;
+            border: none;
+            background-color: $color-grey-light;
+            border-radius: 0.4rem;
+            box-shadow: 0 0.3rem 0.2rem rgba(0,0,0,0.1);
+            resize: none;
+        }
+
+        &__button {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            width: 60%;
+            margin-left: 20%;
+            background-color: $color-primary;
+            color: $color-white;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+            outline: none;
+
+            &:hover {
+                background-color: $color-tertiary;
+            }
+        }
+
+        &__loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

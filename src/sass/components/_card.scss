@@ -1,0 +1,61 @@
+.card {
+    padding: 4rem 3rem;
+    background-color: $color-grey-light;
+    border-radius: 0.5rem;
+
+    &__header {
+        width: 100%;
+
+        &__photo {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        color: $color-primary;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__location {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin-bottom: 0.5rem;
+    }
+
+    &__saletype {
+        font-size: 1.6rem;
+        color: $color-green;
+        margin-bottom: 0.5rem;
+    }
+
+    &__hometype {
+        font-size: 1.6rem;
+        color: $color-tertiary;
+        margin-bottom: 0.5rem;
+    }
+
+    &__sqft {
+        font-size: 1.4rem;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        color: $color-secondary;
+        padding: 1rem 1.5rem;
+        border: 0.1rem solid $color-secondary;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-white;
+            border: 0.1rem solid $color-secondary;
+            background-color: $color-primary;
+        }
+    }
+}
