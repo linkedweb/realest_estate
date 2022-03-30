@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { setAlert } from '../actions/alert';
-import Loader from 'react-loader-spinner';
+import {MutatingDots} from 'react-loader-spinner';
 import PropTypes from 'prop-types';
 
 const Contact = ({ setAlert }) => {
@@ -99,7 +99,7 @@ const Contact = ({ setAlert }) => {
                 />
                 {loading ?
                     <div className='contact__form__loader'>
-                        <Loader
+                        <MutatingDots
                             type="Oval"
                             color="#424242"
                             height={50}
