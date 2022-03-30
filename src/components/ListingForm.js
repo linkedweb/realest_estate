@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Loader from 'react-loader-spinner';
+import {InfinitySpin} from 'react-loader-spinner';
 import PropTypes from 'prop-types';
 
 const ListingForm = (props) => {
@@ -155,7 +155,7 @@ const ListingForm = (props) => {
                 <div className='col-1-of-6'>
                     {loading ?
                         <div className='listingform__loader'>
-                            <Loader
+                            <InfinitySpin
                                 type="Oval"
                                 color="#424242"
                                 height={50}
